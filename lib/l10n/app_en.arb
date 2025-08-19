@@ -1,0 +1,95 @@
+{
+  "@@locale": "en",
+  "appTitle": "E-Commerce App",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "homeTitle": "Products",
+  "@homeTitle": {
+    "description": "Title for the home screen"
+  },
+  "cartTitle": "Shopping Cart",
+  "@cartTitle": {
+    "description": "Title for the cart screen"
+  },
+  "searchProducts": "Search products...",
+  "@searchProducts": {
+    "description": "Placeholder text for the search bar"
+  },
+  "noSuggestionsFound": "No suggestions found",
+  "@noSuggestionsFound": {
+    "description": "Message when no search suggestions are available"
+  },
+  "addToCart": "Add to Cart",
+  "@addToCart": {
+    "description": "Button text to add item to cart"
+  },
+  "removeFromCart": "Remove from Cart",
+  "@removeFromCart": {
+    "description": "Button text to remove item from cart"
+  },
+  "emptyCart": "Your cart is empty",
+  "@emptyCart": {
+    "description": "Message when cart is empty"
+  },
+  "startShopping": "Start Shopping",
+  "@startShopping": {
+    "description": "Button text to start shopping when cart is empty"
+  },
+  "total": "Total",
+  "@total": {
+    "description": "Label for total amount"
+  },
+  "checkout": "Checkout",
+  "@checkout": {
+    "description": "Button text for checkout"
+  },
+  "quantity": "Quantity",
+  "@quantity": {
+    "description": "Label for quantity"
+  },
+  "price": "Price",
+  "@price": {
+    "description": "Label for price"
+  },
+  "currency": "$",
+  "@currency": {
+    "description": "Currency symbol"
+  },
+  "loading": "Loading...",
+  "@loading": {
+    "description": "Loading message"
+  },
+  "error": "Error",
+  "@error": {
+    "description": "Generic error message"
+  },
+  "retry": "Retry",
+  "@retry": {
+    "description": "Button text to retry an action"
+  },
+  "noProductsFound": "No products found",
+  "@noProductsFound": {
+    "description": "Message when no products are found"
+  },
+  "searchResultsFor": "Search results for \"{query}\"",
+  "@searchResultsFor": {
+    "description": "Header for search results",
+    "placeholders": {
+      "query": {
+        "type": "String",
+        "description": "The search query"
+      }
+    }
+  },
+  "itemsInCart": "{count, plural, =0{No items} =1{1 item} other{{count} items}}",
+  "@itemsInCart": {
+    "description": "Number of items in cart",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "description": "Number of items"
+      }
+    }
+  }
+}

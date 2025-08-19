@@ -5,14 +5,16 @@ import '../../data/models/product.dart';
 
 part 'api_service.g.dart';
 
-@RestApi(baseUrl: "https://fakestoreapi.com")
+@RestApi(baseUrl: "https://www.homecenter.com.co/s/search/v1/soco")
 abstract class ApiService {
   factory ApiService(Dio dio, {String baseUrl}) = _ApiService;
 
+  //TODO: implement plain getting producs
   @GET("/products")
   Future<List<Product>> getProducts();
 
-  @GET("/products/{id}")
+  //TODO: implement right query parameters
+  @GET("/products/?priceGroup=10&q={id}&currenpage=1")
   Future<Product> getProduct(@Path("id") int id);
 
   @GET("/products/categories")
@@ -23,7 +25,7 @@ abstract class ApiService {
 }
 
 class ApiClient {
-  static const String baseUrl = "https://fakestoreapi.com";
+  static const String baseUrl = "https://www.homecenter.com.co/s/search/v1/soco";
   late final Dio _dio;
   late final ApiService _apiService;
 

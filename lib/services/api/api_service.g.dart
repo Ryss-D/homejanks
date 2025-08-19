@@ -14,7 +14,7 @@ class _ApiService implements ApiService {
     this.baseUrl,
     this.errorLogger,
   }) {
-    baseUrl ??= 'https://fakestoreapi.com';
+    baseUrl ??= 'https://www.homecenter.com.co/s/search/v1/soco';
   }
 
   final Dio _dio;
@@ -71,7 +71,7 @@ class _ApiService implements ApiService {
     )
         .compose(
           _dio.options,
-          '/products/${id}',
+          '/products/?priceGroup=10&q=${id}&currenpage=1',
           queryParameters: queryParameters,
           data: _data,
         )
