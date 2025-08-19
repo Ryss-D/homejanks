@@ -1,0 +1,46 @@
+import 'package:dio/dio.dart';
+import 'package:retrofit/retrofit.dart';
+import '../models/product.dart';
+
+part 'api_service.g.dart';
+
+@RestApi(baseUrl: "https://fakestoreapi.com")
+abstract class ApiService {
+  factory ApiService(Dio dio, {String baseUrl}) = _ApiService;
+
+  @GET("/products")
+  Future<List<Product>> getProducts();
+
+  @GET("/products/{id}")
+  Future<Product> getProduct(@Path("id") int id);
+
+  @GET("/products/categories")
+  Future<List<String>> getCategories();
+
+  @GET("/products/category/{category}")
+  Future<List<Product>> getProductsByCategory(@Path("category") String category);
+}
+
+class ApiClient {
+  static const String baseUrl = "https://fakestoreapi.com";
+  late final Dio _dio;
+  late final ApiService _apiService;
+
+  ApiClient() {
+    _dio = Dio();
+    _dio.options.baseUrl = baseUrl;
+    _dio.options.connectTimeout = const Duration(seconds: 30);
+    _dio.options.receiveTimeout = const Duration(seconds: 30);
+    
+    // Add interceptors for logging
+    _dio.interceptors.add(LogInterceptor(
+      requestBody: true,
+      responseBody: true,
+      logPrint: (object) => print(object),
+    ));
+
+    _apiService = ApiService(_dio);
+  }
+
+  ApiService get apiService => _apiService;
+}
