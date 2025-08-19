@@ -1,17 +1,17 @@
 import 'package:get_it/get_it.dart';
 import 'package:dio/dio.dart';
-import '../../data/database/app_database.dart';
+import '../../services/database/app_database.dart';
 import '../../data/datasources/cart_local_data_source.dart';
 import '../../data/datasources/product_local_data_source.dart';
 import '../../data/datasources/product_remote_data_source.dart';
 import '../../data/repositories/cart_repository_impl.dart';
 import '../../data/repositories/product_repository_impl.dart';
-import '../../domain/repositories/cart_repository.dart';
-import '../../domain/repositories/product_repository.dart';
+import '../../data/repositories/cart_repository.dart';
+import '../../data/repositories/product_repository.dart';
 import '../../domain/usecases/cart_usecases.dart';
 import '../../domain/usecases/get_products.dart';
-import '../../blocs/cart/cart_bloc.dart';
-import '../../blocs/product/product_bloc.dart';
+import '../../domain/blocs/cart/cart_bloc.dart';
+import '../../domain/blocs/product/product_bloc.dart';
 
 final GetIt getIt = GetIt.instance;
 

@@ -1,6 +1,7 @@
 import 'package:dio/dio.dart';
+import 'package:flutter/foundation.dart';
 import 'package:retrofit/retrofit.dart';
-import '../models/product.dart';
+import '../../data/models/product.dart';
 
 part 'api_service.g.dart';
 
@@ -36,7 +37,7 @@ class ApiClient {
     _dio.interceptors.add(LogInterceptor(
       requestBody: true,
       responseBody: true,
-      logPrint: (object) => print(object),
+      logPrint: (object) => debugPrint(object.toString()),
     ));
 
     _apiService = ApiService(_dio);

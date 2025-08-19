@@ -1,8 +1,8 @@
 import 'dart:convert';
 import 'package:drift/drift.dart';
-import 'package:ecommerce_app/data/database/app_database.dart' hide Product;
-import 'package:ecommerce_app/models/product.dart';
-import 'package:ecommerce_app/models/cart_item.dart' as models;
+import 'package:ecommerce_app/services/database/app_database.dart' hide Product;
+import 'package:ecommerce_app/data/models/product.dart';
+import 'package:ecommerce_app/data/models/cart_item.dart' as models;
 
 abstract class CartLocalDataSource {
   Future<List<models.CartItem>> getCartItems();

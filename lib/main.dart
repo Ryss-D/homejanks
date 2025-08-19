@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'core/di/injection.dart';
-import 'blocs/product/product_bloc.dart';
-import 'blocs/cart/cart_bloc.dart';
-import 'screens/home_screen.dart';
+import 'domain/blocs/product/product_bloc.dart';
+import 'domain/blocs/cart/cart_bloc.dart';
+import 'ui/screens/home_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

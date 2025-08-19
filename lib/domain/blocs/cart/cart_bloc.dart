@@ -1,6 +1,6 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:logger/logger.dart';
-import '../../domain/usecases/cart_usecases.dart' as usecases;
+import '../../usecases/cart_usecases.dart' as usecases;
 import 'cart_event.dart';
 import 'cart_state.dart';
 

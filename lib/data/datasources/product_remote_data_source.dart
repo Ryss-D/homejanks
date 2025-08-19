@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:ecommerce_app/models/product.dart';
+import 'package:ecommerce_app/data/models/product.dart';
 import 'package:retrofit/retrofit.dart';
 
 part 'product_remote_data_source.g.dart';

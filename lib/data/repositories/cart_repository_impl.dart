@@ -1,8 +1,8 @@
 import 'package:dartz/dartz.dart';
-import 'package:ecommerce_app/models/product.dart';
-import 'package:ecommerce_app/models/cart.dart';
+import 'package:ecommerce_app/data/models/product.dart';
+import 'package:ecommerce_app/data/models/cart.dart';
 import '../../core/error/failures.dart';
-import '../../domain/repositories/cart_repository.dart';
+import 'cart_repository.dart';
 import '../datasources/cart_local_data_source.dart';
 
 class CartRepositoryImpl implements CartRepository {

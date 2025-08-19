@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'package:drift/drift.dart';
-import 'package:ecommerce_app/data/database/app_database.dart';
-import 'package:ecommerce_app/models/product.dart' as models;
+import 'package:ecommerce_app/services/database/app_database.dart';
+import 'package:ecommerce_app/data/models/product.dart' as models;
 
 abstract class ProductLocalDataSource {
   Future<List<models.Product>> getCachedProducts();

@@ -1,7 +1,7 @@
 import 'package:dartz/dartz.dart';
-import 'package:ecommerce_app/models/product.dart';
+import 'package:ecommerce_app/data/models/product.dart';
 import '../../core/error/failures.dart';
-import '../repositories/product_repository.dart';
+import '../../data/repositories/product_repository.dart';
 
 class GetProducts {
   final ProductRepository repository;
