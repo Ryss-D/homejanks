@@ -1,12 +1,6 @@
-# Flutter E-Commerce App
-
-A Flutter e-commerce application built with Dio for network requests, BloC for state management, and Drift for local data persistence.
-
-## Features
 
 - **Product Browsing**: View products fetched from a REST API
 - **Search Functionality**: Search products by title or description
-- **Category Filtering**: Filter products by categories
 - **Shopping Cart**: Add, remove, and update product quantities
 - **Local Storage**: Products and cart data are cached locally using Drift
 - **Offline Support**: Browse cached products when offline
@@ -26,35 +20,6 @@ A Flutter e-commerce application built with Dio for network requests, BloC for s
 - **Material Design**: Clean and modern UI
 - **Cached Images**: Network images with caching
 - **Shimmer Loading**: Beautiful loading states
-
-## Project Structure
-
-```
-lib/
-├── blocs/
-│   ├── cart/
-│   │   ├── cart_bloc.dart
-│   │   ├── cart_event.dart
-│   │   └── cart_state.dart
-│   └── product/
-│       ├── product_bloc.dart
-│       ├── product_event.dart
-│       └── product_state.dart
-├── core/
-│   └── di/
-│       └── injection.dart
-├── database/
-│   └── database.dart
-├── models/
-│   ├── cart_item.dart
-│   └── product.dart
-├── screens/
-│   ├── cart_screen.dart
-│   └── home_screen.dart
-├── services/
-│   └── api_service.dart
-└── main.dart
-```
 
 ## Dependencies
 
